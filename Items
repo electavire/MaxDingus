@@ -1,0 +1,14 @@
+class Item():
+  """Base class for items and shit"""
+  def __init__(self, name, description, value):
+    self.name = name
+    self.description = name
+    self.name = value
+  
+  def __str__(self):
+    return "{}\n=====\n{}\nValue: {}\n".format(self.name, self.description, self.value)
+  
+class Cash_Munny(Item):
+  def __init__(self, amt):
+    self.amt = amt
+    super().__init__(name="CashMunny, description = "Used to purchase shit",format(str(self.amt)), value=self.amt)
